@@ -44,12 +44,14 @@ function Scanner() {
     function error(err) {
       console.warn(err);
     }
+
+    
   }, [currentDate]);
 
   return (
     <div className="scanner-container">
       {scanResult ? (
-        <div>
+        <div className="success">
           Success: <a href={`http://${scanResult}`}>{scanResult}</a>
           {accessGranted ? (
             <div className="access-granted">Access Granted</div>

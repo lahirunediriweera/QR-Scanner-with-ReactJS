@@ -5,15 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height of the container as needed */
+  height: 80vh; /* Adjust the height of the container as needed */
 }
 
 #reader {
   width: 100%; /* Make the camera take the full width of its container */
   max-width: 500px; /* Set a maximum width for the camera */
   height: auto; /* Maintain the aspect ratio */
-  margin-top: 20px; /* Adjust the top margin as needed */
-  border: 2px solid #ccc; /* Add a border around the camera for visual clarity */
+  margin-top: -100px; /* Adjust the top margin as needed */
+  border: 2px solid #f80101; /* Add a border around the camera for visual clarity */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the camera */
   position: relative; /* Make the container relative for absolute positioning of qrbox */
 }
@@ -25,4 +25,20 @@
   height: 100px; /* Set the height of the qrbox */
   border: 2px solid #00f; /* Set the border color of the qrbox */
   box-sizing: border-box; /* Include border in the box size */
+}
+
+.not-access{
+  color: #f80101;
+  font-size: 50px;
+  font-weight: bold;
+}
+.access-granted{
+  color: #01f80d;
+  font-size: 50px;
+  font-weight: bold;
+}
+.scanner-container .success{
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
 }
